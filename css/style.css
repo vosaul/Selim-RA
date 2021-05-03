@@ -404,7 +404,7 @@ header {
 /*third*/
 .third_box {
     background: #13120D;
-    padding: 100px 0 0;    position: relative;
+    padding: 120px 0 0;    position: relative;
 }
 
 .third_box:before {
@@ -433,7 +433,9 @@ header {
     color: #DDDDDD;
     font-size: 18px;
     padding: 30px 50px 15px 50px;
-    z-index: 99;
+    z-index: 99;    min-height: 340px;
+    display: flex;
+    align-items: center;
 }
 .wdt_box {position: relative;
 }
@@ -441,16 +443,14 @@ header {
 .wdt_box:before {
     content: "";
     width: 96%;
-    height: 127%;
+    height: 118%;
     position: absolute;
     left: 40px;
     top: -30px;
     border: 1px solid #B0A7A7;
     z-index: 9;
 }.gld_curncy_img {
-    padding: 50px 0 0;
-}.gld_curncy_img {
-    padding: 80px 0 0;
+    padding: 120px 0 0;
     position: relative;
 }
 
@@ -579,7 +579,7 @@ header {
     overflow: hidden;
     position: relative;
     width: 100%;
-    background: url(../images/details.png);
+    background: url(../images/details1.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 723px;
