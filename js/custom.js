@@ -54,7 +54,7 @@ $(window).scroll(function() {
 
 
 
- $('#menu-icon').click(function(){
+ $('#responsive-menu').click(function(){
     $('.navigation_bar').toggleClass('active');
     $(".navigation_bar").removeClass("darkHeader");
   });
