@@ -155,7 +155,7 @@ nav ul a {font-size: 45px;}.service_box ul p{    font-size: 16px;}.header_wp_pag
 
 @media only screen and (min-width:1022px) and (max-width:1024px) {
 .sup_box {height: 710px;} .detl_img .offset-lg-2.col-lg-8 {-ms-flex: 0 0 78.666667%; flex: 0 0 78.666667%; max-width: 78.666667%; margin-left: 10.666667%; }
-.photo_border {height: 570px;}
+.photo_border {height: 570px;}.service_box ul {flex-wrap: wrap; }
 
 }
 
