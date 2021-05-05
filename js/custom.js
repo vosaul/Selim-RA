@@ -57,6 +57,19 @@ $(window).scroll(function() {
  $('#responsive-menu').click(function(){
     $('.navigation_bar').toggleClass('active');
     $(".navigation_bar").removeClass("darkHeader");
+    $(".overlay").removeClass("removebnr");
+    $(".menu_blg ul").removeClass("removeul");
+    $(".menu-icon").removeClass("checkmenu");
+
   });
 
 
+  $('.menu_blg ul li a').click(function(){
+   $('.navigation_bar').removeClass('active');
+    $(".overlay").addClass("removebnr");
+    $(".menu_blg ul").addClass("removeul");
+    $(".menu-icon").addClass("checkmenu");
+
+  
+
+  });
