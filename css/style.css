@@ -94,7 +94,7 @@ nav ul#social-media > li {display: inline-block; font-size: 1.5em; margin: 0.5em
 #scroll {z-index: 999; position: fixed; right: 10px; bottom: 10px; cursor: pointer; width: 50px; height: 50px; background-color: #b98036; display: none; -webkit-border-radius: 60px; -moz-border-radius: 60px; border-radius: 60px; box-shadow: 1px 3px 22px 6px rgb(31 31 31 / 20%); } #scroll span {position: absolute; top: 17%; left: 30%; height: 0; width: 0; font-size: 20px; color: #13120d; }
 
 /*-----------------------Banner---------------------------*/
-.homepage-logo-block {height: 100vh; background: var(--color-primary); overflow: hidden; position: relative; width: 100%; background: #13120d; } .homepage-logo-block :before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/banner_bg.png); background-position: top; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; }
+.homepage-logo-block {height: 100vh; background: var(--color-primary); overflow: hidden; position: relative; width: 100%; background: #13120d; } .homepage-logo-block:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/banner_bg.png); background-position: top; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; }
 .homepage-logo-block img {height: auto; } #scroll-btm {position: absolute; bottom: 20px; cursor: pointer; color: var(--color-secondary)!important; font-size: 20px; text-align: center; margin: 0 auto; width: 100%; }
  #scroll-btm img {height: 25px; }.support_box {    padding: 100px 0; background: var(--color-accent);position: relative; overflow: hidden; } 
 .sup_box:before{content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip1.png); background-position: bottom; background-repeat: no-repeat; background-size: contain; top: 0; background-attachment: fixed; }
@@ -155,6 +155,7 @@ nav ul a {font-size: 45px;}.service_box ul p{    font-size: 16px;}.header_wp_pag
 @media only screen and (max-width:1024px) {
  .homepage-logo-block {height: 70vh;} .menu_blg{width: 100%;}
  nav ul a {font-size: 20px; }nav ul > li {margin: 0.1em 0; }ul#social-media img {height: 20px; }nav input:checked ~ div ul { margin: 0;}
+.support_box:before,.service_box:before,.sup_box:before,.crwn_box:before,.third_box:before,.homepage-logo-block:before {background-attachment: initial; }
 
  }
 
@@ -185,18 +186,20 @@ nav ul a {font-size: 45px;}.service_box ul p{    font-size: 16px;}.header_wp_pag
 .lst_box {height: auto;} .tringleBox {text-align: center; padding: 100px 20px 40px; width: 100%; } .header_wp_page1 .rea_head1 {padding: 30px 0; }
  .sup_box {height: auto; padding: 70px 0 50px; }.lft_img_box {margin-bottom: 50px; }
 .crwn_box {padding: 50px 0;}.crwn_box img {margin: 20px 0 30px; }.footer .container {padding: 30px 15px 20px; }#scroll {right: 26px;}.third_box {overflow: hidden; }
- .third_box {padding: 50px 0 0;}
+ .third_box {padding: 50px 0 0;}.wrap_box {font-size: 16px;}.frst-box h3 {font-size: 20px;}
+
 }
 
 @media only screen and (max-width:767px)  {
     .photo_border {height: 118%;}.third_box_col {width: 90%;    margin: 50px 0; }.service_box ul li:not(:last-child) {    border-right: none; margin-bottom: 20px; }
 .frst-box {padding: 50px 10px 0;} .lst_box:before {left: 15px; top: -78px; width: 219px; height: 120px; -moz-transform: rotate(-37deg); -webkit-transform: rotate(-37deg ); transform: rotate(-37deg ); }
 .lst_box:after {right: 17px; top: -81px; width: 215px; height: 130px; -moz-transform: rotate(38deg ); -webkit-transform: rotate(38deg ); transform: rotate(38deg );}
-.banner-right {height: 300px; }
-
+.banner-right {height: 300px; }.footer_btm p {font-size: 10px; }.detail-box p,.rea_head1 p ,.lst_box p,.serv_head p,.wrap_box p {font-size: 14px; }
 }
 
-
+@media only screen and (max-width:350px)  {
+.lst_box:after {right: 21px; top: -70px; width: 180px;}.lst_box:before {left: 18px; top: -68px; width: 184px;}
+.detail-box h2.aboutHead {font-size: 18px; }.detail-box h4, .rea_head1 h1 {font-size: 20px; } }
 
 @media (max-width:812px) and (min-width: 375px) and  (orientation: landscape) {
 .homepage-logo-block {height: 100vh;}.service_box ul {flex-wrap: wrap; }.banner-right { height: 680px;}
