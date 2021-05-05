@@ -167,7 +167,7 @@ nav ul a {font-size: 45px;}.service_box ul p{    font-size: 16px;}.header_wp_pag
  .homepage-logo-block {height: 70vh;} .menu_blg{width: 100%;}
  nav ul a {font-size: 20px; }nav ul > li {margin: 0.1em 0; }ul#social-media img {height: 20px; }nav input:checked ~ div ul { margin: 0;}
 .support_box:before,.service_box:before,.sup_box:before,.crwn_box:before,.third_box:before,.homepage-logo-block:before {
- background-attachment: fixed; z-index: 0; opacity: .7; background-position: initial;}
+ background-attachment: fixed; z-index: 0; opacity: .6; background-position: initial;}
 .sup_box:before,.crwn_box:before{ background-size: cover;}
 #produktelosungen {position: relative; } #produktelosungen:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip5.png); background-position: initial; background-repeat: no-repeat; background-size: cover; opacity: .7; left: 0; background-attachment: fixed; top: 0; }
 .homepage-logo-block:before {background-position: top!important; } 
