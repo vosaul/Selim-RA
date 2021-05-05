@@ -64,22 +64,33 @@ body textarea::-webkit-input-placeholder{font-size: 14px;}
 /***---------------------------------- INPUT -------------------------***/
 nav input {opacity: 0; position: absolute; z-index: -1; } /*** LABEL ***/ nav label {cursor: pointer; display: block; font: 2em/1 'Oswald', sans-serif; padding: 0.5em; }
 /* Hamburger Icon */
-#menu-icon{background: #C7953C; border-radius: 3px; height: 5px; transition: all 0.2s ease-in-out; width: 38px; }
-#menu-icon {display: inline-block; margin: 0.4em 0; max-width: 38px; position: relative; } nav label #menu-icon {float: right; } 
-#menu-icon:before, #menu-icon:after {content: ''; position: absolute; }
-#menu-icon:before {top: -0.4em; left: 0; background: #C7953C; border-radius: 3px; height: 5px; transition: all 0.2s ease-in-out;width: 19px; }
-#menu-icon:after {bottom: -0.4em;    background: #C7953C; border-radius: 3px; height: 5px; transition: all 0.2s ease-in-out;width: 19px;    right: 0; }
+.menu-icon{background: #C7953C; border-radius: 3px; height: 5px; transition: all 0.2s ease-in-out; width: 38px; }
+.menu-icon {display: inline-block; margin: 0.4em 0; max-width: 38px; position: relative; } nav label .menu-icon {float: right; } 
+.menu-icon:before, .menu-icon:after {content: ''; position: absolute; }
+.menu-icon:before {top: -0.4em; left: 0; background: #C7953C; border-radius: 3px; height: 5px; transition: all 0.2s ease-in-out;width: 19px; }
+.menu-icon:after {bottom: -0.4em;    background: #C7953C; border-radius: 3px; height: 5px; transition: all 0.2s ease-in-out;width: 19px;    right: 0; }
 /*--------------------------------- Close Icon ------------------------------*/
-nav input[type=checkbox]:checked + label #menu-icon {background: transparent; } nav input[type=checkbox]:checked + label #menu-icon:before {top: 0; transform: rotate(-45deg);width:38px; } nav input[type=checkbox]:checked + label #menu-icon:after {bottom: 0; transform: rotate(45deg);width:38px; }
+nav input[type=checkbox]:checked + label .menu-icon {background: transparent; } 
+nav input[type=checkbox]:checked + label .menu-icon:before {top: 0; transform: rotate(-45deg);width:38px; } 
+nav input[type=checkbox]:checked + label .menu-icon:after {bottom: 0; transform: rotate(45deg);width:38px; }
+
+nav input[type=checkbox]:checked + label .menu-icon.checkmenu {background: #C7953C; }
+nav input[type=checkbox]:checked + label .menu-icon.checkmenu:before {top: -0.4em; transform: rotate(0deg);width:19px; } 
+nav input[type=checkbox]:checked + label .menu-icon.checkmenu:after {bottom: -0.4em; transform: rotate(0deg);width:19px; }
+
+
 
 /*** -----------------------------MENU Overlay -------------------------*/
-nav input:checked ~ #overlay {background: url(../images/banner_img.png) ;    background-attachment: fixed; background-position: center; background-size: cover; bottom: 0; left: 0; height: 100vh; position: fixed; right: 0; top: 0; width: 100vw; z-index: -1; }
-nav input:checked ~ #overlay:before{/*content: ''; position: absolute; top: -20%; left: -10%; width: 100%; height: 100%; background: url(../images/head_logo.svg); background-repeat: no-repeat;*/ }
-#overlay {top: -100vh;    transition: .5s all ease;
-    height: 0; } 
+nav input:checked ~ .overlay {background: url(../images/banner_img.png) ;    background-attachment: fixed; background-position: center; background-size: cover; bottom: 0; left: 0; height: 100vh; position: fixed; right: 0; top: 0; width: 100vw; z-index: -1; }
+nav input:checked ~ .overlay:before{/*content: ''; position: absolute; top: -20%; left: -10%; width: 100%; height: 100%; background: url(../images/head_logo.svg); background-repeat: no-repeat;*/ }
+.overlay {top: -100vh;    transition: .5s all ease;height: 0; } 
+
 /* List */
 nav ul {font-size: 1.5em; list-style: none; margin: 0; max-height: 0; opacity: 0; overflow: hidden; padding: 0; text-align: center;  } 
 nav input:checked ~ div ul {margin: 1em; max-height: inherit; opacity: 1;transition: 2s all ease; } nav ul > li {margin: 0.5em 0; } nav ul a {color: #B98036!important; text-decoration: none;font-family: 'Playfair Display', serif;font-size: 30px; } nav ul a:hover {text-decoration: none; }
+
+nav input:checked ~  .overlay.removebnr ,nav input:checked ~ div ul.removeul{display: none;opacity: 0}
+
 /*----------------------header Social Media----------------------------- */
 nav ul#social-media > li {display: inline-block; font-size: 1.5em; margin: 0.5em; } ul#social-media img {height: 28px; } header {position: relative; }
 
@@ -136,11 +147,11 @@ nav ul#social-media > li {display: inline-block; font-size: 1.5em; margin: 0.5em
 /*-----------------------------------------------detl_img------------------------------------*/
 .detl_img {overflow: hidden; position: relative; width: 100%; background: url(../images/details1.png); background-size: cover;background-attachment: fixed; background-repeat: no-repeat; height: 723px; background-position: center; } .overlay_box {position: relative; background: rgb(22 22 22 / 70%); }
 .lst_box {position: absolute; bottom: 0; height: 320px; background: #B98036; width: 100%;display: flex; align-items: center; }
-.lst_box p {font-size: 16px; color: #DDDDDD; line-height: 22px;} .lst_box a{    font-size: 16px; } .tringleBox {width: 70%; margin: 0 auto; text-align: center; }
+.lst_box p {font-size: 16px; color: #DDDDDD; line-height: 22px;} .lst_box a{ cursor: pointer;   font-size: 16px; } .tringleBox {width: 70%; margin: 0 auto; text-align: center; }
 .frst-box {padding: 80px 100px 0; height: 50%; position: relative; } .frst-box h3 {font-size: 25px; text-align: center; color: #DDDDDD; } 
 .lst_box:before {content: ''; position: absolute; left: 12px; top: -83px; width: 400px; height: 145px; background: #b98036; -moz-transform: rotate(-23deg); -webkit-transform: rotate(-23deg ); transform: rotate(-23deg ); }
 .lst_box:after {content: ''; position: absolute; right: 13px; top: -85px; width: 393px; height: 146px; background: #b98036; -moz-transform: rotate(23deg ); -webkit-transform: rotate(23deg ); transform: rotate(23deg ); }
-.detl_img:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip1.png); background-position: center; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed;     z-index: 9;}
+.detl_img:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip1.png); background-position: center; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed;  }
 
 /*----------------------------------------------Media Css-----------------------------------*/
 @media only screen and (min-width:1600px) {
@@ -155,9 +166,13 @@ nav ul a {font-size: 45px;}.service_box ul p{    font-size: 16px;}.header_wp_pag
 @media only screen and (max-width:1024px) {
  .homepage-logo-block {height: 70vh;} .menu_blg{width: 100%;}
  nav ul a {font-size: 20px; }nav ul > li {margin: 0.1em 0; }ul#social-media img {height: 20px; }nav input:checked ~ div ul { margin: 0;}
-.support_box:before,.service_box:before,.sup_box:before,.crwn_box:before,.third_box:before,.homepage-logo-block:before {background-attachment: initial; }
+.support_box:before,.service_box:before,.sup_box:before,.crwn_box:before,.third_box:before,.homepage-logo-block:before {
+ background-attachment: fixed; z-index: 0; opacity: .7; background-position: initial;}
+.sup_box:before,.crwn_box:before{ background-size: cover;}
+#produktelosungen {position: relative; } #produktelosungen:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip5.png); background-position: initial; background-repeat: no-repeat; background-size: cover; opacity: .7; left: 0; background-attachment: fixed; top: 0; }
+.homepage-logo-block:before {background-position: top!important; } 
 
- }
+}
 
 
 @media only screen and (min-width:1022px) and (max-width:1024px) {
