@@ -105,19 +105,22 @@ nav ul#social-media > li {display: inline-block; font-size: 1.5em; margin: 0.5em
 #scroll {z-index: 999; position: fixed; right: 10px; bottom: 10px; cursor: pointer; width: 50px; height: 50px; background-color: #b98036; display: none; -webkit-border-radius: 60px; -moz-border-radius: 60px; border-radius: 60px; box-shadow: 1px 3px 22px 6px rgb(31 31 31 / 20%); } #scroll span {position: absolute; top: 17%; left: 30%; height: 0; width: 0; font-size: 20px; color: #13120d; }
 
 /*-----------------------Banner---------------------------*/
-.homepage-logo-block {height: 100vh; background: var(--color-primary); overflow: hidden; position: relative; width: 100%; background: #13120d; } .homepage-logo-block:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/banner_bg.png); background-position: top; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; }
+.homepage-logo-block {height: 100vh; background: var(--color-primary); overflow: hidden;  width: 100%; background: #13120d; } 
+.homepage-logo-block:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/banner_bg.png); background-position: top; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; }
 .homepage-logo-block img {height: auto; } #scroll-btm {position: absolute; bottom: 20px; cursor: pointer; color: var(--color-secondary)!important; font-size: 20px; text-align: center; margin: 0 auto; width: 100%; }
- #scroll-btm img {height: 25px; }.support_box {    padding: 100px 0; background: var(--color-accent);position: relative; overflow: hidden; } 
+ #scroll-btm img {height: 25px; }.support_box {    padding: 100px 0; background: var(--color-accent);overflow: hidden; } 
 .sup_box:before{content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip1.png); background-position: bottom; background-repeat: no-repeat; background-size: contain; top: 0; background-attachment: fixed; }
 .support_dtl1,.support_dtl2{ position: relative;} .detail-box {} .detail-box h2.aboutHead {color: #fff; font-size: 35px; font-weight: 400; } .detail-box h4 {font-size: 40px; font-weight: 400; color: #B98036; } .detail-box p { color: #DDDDDD; font-size: 16px;} .photo_border {width: 96%; height: 110%; position: absolute; left: 40px; top: -30px; border: 1px solid #B0A7A7; z-index: 9; } .rgt_img_sctn img{width: 100%}
- .support_box:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip5.png); background-position: inherit; background-repeat: no-repeat; background-size: cover; left: 0; background-attachment: fixed; z-index: 9; top: 0; }
+/* .support_box:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip5.png); background-position: inherit; background-repeat: no-repeat; background-size: cover; left: 0; background-attachment: fixed; z-index: 9; top: 0; }
+*/
 
-
-
-
+.first_box{position: relative;}
+ .first_box:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip5.png); 
+ background-position: center; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; } 
+ 
 
 /*---------------------------------------third------------------------------*/
-.third_box {background: #13120D; padding: 120px 0 0;    position: relative; }
+.third_box {background: #13120D; padding: 120px 0 0;    position: relative; overflow: hidden;}
  .third_box:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip2.png); background-position: center; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; } 
  .text_border {width: 96%; height: 127%; position: absolute; left: 40px; top: -30px; border: 1px solid #B0A7A7; z-index: 9; } 
  .wrap_box {position: relative; background: #202020; color: #DDDDDD; font-size: 18px; padding: 30px 50px 15px 50px; z-index: 99;    min-height: 340px; display: flex; align-items: center; } .wdt_box {position: relative; } 
@@ -155,7 +158,7 @@ nav ul#social-media > li {display: inline-block; font-size: 1.5em; margin: 0.5em
 
 /*----------------------------------------------Media Css-----------------------------------*/
 @media only screen and (min-width:1600px) {
-.homepage-logo-block img {height: 223px; } #scroll-btm img {height: 30px; }
+.homepage-logo-block img {height: auto; } #scroll-btm img {height: 30px; }
 .detail-box p ,.lst_box p,.lst_box a{font-size: 18px;}.detail-box h4 {font-size: 55px;}
 .detail-box h2 { font-size: 45px;} 
 nav ul a {font-size: 45px;}.service_box ul p{    font-size: 16px;}.header_wp_page1 h1{    font-size: 55px;}
@@ -164,14 +167,16 @@ nav ul a {font-size: 45px;}.service_box ul p{    font-size: 16px;}.header_wp_pag
 
 
 @media only screen and (max-width:1024px) {
- .homepage-logo-block {height: 70vh;} .menu_blg{width: 100%;}
+ .homepage-logo-block {height: 100vh;} .menu_blg{width: 100%;}
  nav ul a {font-size: 20px; }nav ul > li {margin: 0.1em 0; }ul#social-media img {height: 20px; }nav input:checked ~ div ul { margin: 0;}
 .support_box:before,.service_box:before,.sup_box:before,.crwn_box:before,.third_box:before,.homepage-logo-block:before {
  background-attachment: fixed; z-index: 0; opacity: .7; background-position: initial;}
 .sup_box:before,.crwn_box:before{ background-size: cover;}
 #produktelosungen {position: relative; } #produktelosungen:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip5.png); background-position: initial; background-repeat: no-repeat; background-size: cover; opacity: .7; left: 0; background-attachment: fixed; top: 0; }
 .homepage-logo-block:before {background-position: top!important; } 
-
+ .support_box:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip5.png); background-position: inherit; background-repeat: no-repeat; background-size: cover; left: 0; background-attachment: fixed; z-index: 9; top: 0; }
+ .first_box:before {display: none } 
+ 
 }
 
 
