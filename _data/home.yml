@@ -22,7 +22,7 @@ service_box:
     - title: Kundenmaterial
       image: /images/customer.svg
     - title: Gesprächsvarianten
-      image: /images/chat.svgservices
+      image: /images/chat.svg
     - title: Erklär Videos
       image: /images/videos.svg
     - title: Sozialmedia
@@ -50,6 +50,8 @@ webinar:
 
 crwn_box:
   text:
-    - Die beständigste Währung der Welt zählt bis heute als Fels in der Brandung des internationalen Finanzmarktes. Als Absicherung gegen Banken und Finanzkrisen, gegen Pleiten von Gesellschaften und Staaten und vor dem Werterhalts des Vermögens vor Inflation
-    - Die beständigste Währung der Welt zählt bis heute als Fels in der Brandung des internationalen Finanzmarktes. Als Absicherung gegen Banken und Finanzkrisen, gegen Pleiten von Gesellschaften und Staaten und vor dem Werterhalts des Vermögens vor Inflation
+    - >
+      Die beständigste Währung der Welt zählt bis heute als Fels in der Brandung des internationalen Finanzmarktes. Als Absicherung gegen Banken und Finanzkrisen, gegen Pleiten von Gesellschaften und Staaten und vor dem Werterhalts des Vermögens vor Inflation
+    - >
+       Die beständigste Währung der Welt zählt bis heute als Fels in der Brandung des internationalen Finanzmarktes. Als Absicherung gegen Banken und Finanzkrisen, gegen Pleiten von Gesellschaften und Staaten und vor dem Werterhalts des Vermögens vor Inflation
   image: /images/crwn1.png
