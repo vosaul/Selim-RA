@@ -39,3 +39,17 @@ sup_box:
   title: Produktgeber und Varianten 
   text: Wir checken 24 Stunden täglich jeden Anbieter. Für ein offenes, ehrliches und   transparentes Goldprodukt in Ihrem Kundenportfolio. Real Assets Support ist KEIN   Edelmetallanbieter!!! Sondern eine unabhänige Gesellschaft die Unternehmen und Anbieter   speziell 
   image: /images/sprt_gld_cn1.png
+
+webinar:
+  title: Bei Fragen und Anregungen stehen wir Ihnen jederzeit gerne zur Verfügung.
+  image: /images/crwn1.png
+  text:
+    - Vergessen Sie nicht unsere Webinare!!! 
+    - Für Kunden immer dienstags um 10.00 Uhr und mittwochs um 18.00 Uhr unter <a href="https://us02web.zoom.us/webinar/register/WN_06TxOwwsTXSTULQDyZVxEg" target=_blank>www.goldwebinar.de </a>
+    - Für Makler neu ab 2021 immer am ersten Mittwoch des Monats um 10.00 Uhr unter <a href="https://us02web.zoom.us/webinar/register/WN_06TxOwwsTXSTULQDyZVxEg" target=_blank>www.makler-goldwebinar.de
+
+crwn_box:
+  text:
+    - Die beständigste Währung der Welt zählt bis heute als Fels in der Brandung des internationalen Finanzmarktes. Als Absicherung gegen Banken und Finanzkrisen, gegen Pleiten von Gesellschaften und Staaten und vor dem Werterhalts des Vermögens vor Inflation
+    - Die beständigste Währung der Welt zählt bis heute als Fels in der Brandung des internationalen Finanzmarktes. Als Absicherung gegen Banken und Finanzkrisen, gegen Pleiten von Gesellschaften und Staaten und vor dem Werterhalts des Vermögens vor Inflation
+  image: /images/crwn1.png

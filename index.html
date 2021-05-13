@@ -98,17 +98,13 @@ title:
                      <div class="offset-lg-2 col-lg-8 h-100">
                         <div class="overlay_box h-100">
                            <div class="frst-box">
-                              <h3>Bei Fragen und Anregungen stehen wir Ihnen jederzeit gerne zur Verfügung.</h3>
+                              <h3>{{hp.webinar.title}}</h3>
                            </div>
                            <div class="lst_box">
                               <div class="tringleBox">
-                                 <p>Vergessen Sie nicht unsere Webinare!!! </p>
-                                 <p> Für Kunden immer dienstags um 10.00 Uhr und mittwochs um 18.00 Uhr unter <a
-                                       href="https://us02web.zoom.us/webinar/register/WN_06TxOwwsTXSTULQDyZVxEg"
-                                       target=_blank>www.goldwebinar.de </a> </p>
-                                 <p> Für Makler neu ab 2021 immer am ersten Mittwoch des Monats um 10.00 Uhr unter <a
-                                       href="https://us02web.zoom.us/webinar/register/WN_06TxOwwsTXSTULQDyZVxEg"
-                                       target=_blank>www.makler-goldwebinar.de</a></p>
+                                 {%- for t in {{hp.webinar.text}} -%}
+                                    <p>{{t}}</p>
+                                 {%- endfor -%}
                               </div>
                            </div>
                         </div>
@@ -138,7 +134,7 @@ title:
                <div class="row h-100">
                   <div class="col-md-6 align-items-center justify-content-start d-flex h-100">
                      <div class="lft_img_box">
-                        <img src="{{hp.sup_box.image}}">
+                        <img src="{{hp.sup_box.image}}" alt="support">
                      </div>
                   </div>
                   <div class="col-md-6 h-100">
@@ -157,23 +153,17 @@ title:
                <div class="row h-100 align-items-center justify-content-start">
                   <div class="col-md-4 ">
                      <div class="rea_head1 text-left">
-                        <p>Die beständigste Währung der Welt zählt bis heute als Fels in der Brandung des
-                           internationalen Finanzmarktes. Als Absicherung gegen Banken und Finanzkrisen, gegen
-                           Pleiten von Gesellschaften und Staaten und vor dem Werterhalts des Vermögens vor Inflation
-                           is</p>
+                        <p>{{hp.crwn_box.text[0]}}</p>
                      </div>
                   </div>
                   <div class="col-md-4 ">
                      <div class="">
-                        <img src="images/crwn1.png">
+                        <img src="{{hp.crwn_box.image}}">
                      </div>
                   </div>
                   <div class="col-md-4">
                      <div class="rea_head1 text-left">
-                        <p>Die beständigste Währung der Welt zählt bis heute als Fels in der Brandung des
-                           internationalen Finanzmarktes. Als Absicherung gegen Banken und Finanzkrisen, gegen
-                           Pleiten von Gesellschaften und Staaten und vor dem Werterhalts des Vermögens vor Inflation
-                           is</p>
+                        <p>{{hp.crwn_box.text[1]}}</p>
                      </div>
                   </div>
                </div>
