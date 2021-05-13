@@ -1,0 +1,41 @@
+support_box:
+  title: Real Assets Support
+  subtitle: Deutschlands größter Makler Betreuer im Edelmetallbereich
+  text: 
+    - Der deutsche Goldmarkt ist aufgrund der geringen gesetzlichen Regelungen und Sicherungen eher turbulent einzuordnen. Auf viele seriöse Anbieter kommen genauso viele eher fragwürdige Anbieter die die gesetzlichen Lücken für sich nutzen. Dazu kommt das im Goldbereich keine so hohen Margen wie z.B. im Finanzbereich möglich sind.
+    - '„Also wie und wo kann ich meine Kunden mit Edelmetall versorgen?“  Genau hier kommt der Real Assets Support ins Spiel. Als unabhängiger Maklerbetreuer,  arbeiten wir ausschließlich mit Finanz und Versicherungsprofis und haben uns auf  Edelmetalle und Ihre Anbieter spezialisiert.'
+  image: /images/supprt_rgt1.png
+
+third_box:
+  text:  
+    - Seit 7 Jahren vergleichen und prüfen wir Anbieter, Gesellschaften und Vertriebe auf Herz und Nieren. Mit dieser geballten Edelmetall Expertise wissen wir ganz genau wo wir hinschauen müssen.
+    - Wir prüfen von den Kostenstrukturen und vertrieblichen Vernetzung bis hin zur Sicherheit und Kundenfreundlichkeit. Und decken damit jede noch so versteckte Kostenfalle, jede Undurchsichtigkeit in Kundenverträgen und jede Sicherheitslücke auf.
+
+service_box:
+  text: 
+    - Wir sind für Sie da.
+    - Egal ob Sie in Ihrer Maklertätigkeit erfahrener Edelmetallprofi oder Neueinsteiger,
+    - wir unterstützen Sie genauso wie Sie es brauchen.
+  services:
+    - title: Webinare
+      image: /images/video.svg
+    - title: Kundenmaterial
+      image: /images/customer.svg
+    - title: Gesprächsvarianten
+      image: /images/chat.svgservices
+    - title: Erklär Videos
+      image: /images/videos.svg
+    - title: Sozialmedia
+      image: /images/bullhorn.svg
+    - title: Website Einbau
+      image: /images/web-search-engine.svg
+    - title: Kundenberatung
+      image: /images/advise.svg
+four_box: 
+  title: Produktgeber und Varianten 
+  text: Wir checken 24 Stunden täglich jeden Anbieter. Für ein offenes, ehrliches undtransparentes Goldprodukt in Ihrem Kundenportfolio. Real Assets Support ist KEINEdelmetallanbieter!!! Sondern eine unabhänige Gesellschaft die Unternehmen und Anbieterspeziell 
+
+sup_box: 
+  title: Produktgeber und Varianten 
+  text: Wir checken 24 Stunden täglich jeden Anbieter. Für ein offenes, ehrliches und   transparentes Goldprodukt in Ihrem Kundenportfolio. Real Assets Support ist KEIN   Edelmetallanbieter!!! Sondern eine unabhänige Gesellschaft die Unternehmen und Anbieter   speziell 
+  image: /images/sprt_gld_cn1.png

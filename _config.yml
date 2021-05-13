@@ -1,0 +1,24 @@
+
+title: Real Assets Support
+email: your-email@example.com
+author: Fabian Mörtzschky
+phone: 07151-2565035
+email: info@real-assets-support.de
+address:  Heinkelstraße 4 71384 Weinstadt 
+description: >- # this means to ignore newlines until "baseurl:"
+  Experienced Software Developer with a solid background in software development, business intelligence, cryptocurrencies, engineering and research, and passionate about the dynamics of technological innovation.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+social: 
+  - icon: /images/instagram.svg
+    link: https://www.instagram.com/real_assets_support/
+  - icon: images/logo-facebook.svg
+    link: https://www.facebook.com/Real-Assets-Support-1462791537189561
+  - icon: /images/twitter.svg
+    link: https://twitter.com/AssetsSupport
+    
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+
