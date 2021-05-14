@@ -151,7 +151,14 @@ nav ul#social-media > li {display: inline-block; font-size: 1.5em; margin: 0.5em
 .header_wp_page1 .rea_head1 {padding: 0 4.5rem; } .sup_box {background: #161616; height: 890px;position: relative; } 
 .lft_img_box img {border: 1px solid #B0A7A7; padding: 20px; }.crwn_box {background: #13120d; /* height: 700px; */ padding: 100px 0;position: relative; }
 /*.crwn_box:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip4.png); background-position: bottom; background-repeat: no-repeat; background-size: contain; top: 0; background-attachment: fixed; }*/
-
+.rea_head1 h2 {
+    font-size: 40px;
+    color: #B98036;
+}
+ h3 {
+    font-size: 32px;
+    color: #B98036;
+}
 
 
 /*-----------------------------------------------detl_img------------------------------------*/
