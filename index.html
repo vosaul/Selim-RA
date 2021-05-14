@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 
+title: Home
+image: /images/sprt_gld_cn.png
 ---
 <div class="wrapper">
    <div id="content">
@@ -28,7 +29,7 @@ title:
                   <div class="row">
                      <div class="col-md-6 col-sm-12 support_dtl1">
                         <div class="detail-box">
-                           <h2 class="aboutHead animated wow fadeIn" data-wow-delay="1s">{{hp.support_box.title}}</h2>
+                           <h1 class="aboutHead animated wow fadeIn" data-wow-delay="1s">{{site.title}}</h1>
                            <h4 class=" animated wow fadeIn" data-wow-delay="0.5s">{{hp.support_box.subtitle}}</h4>
                            {%- for p in hp.support_box.text -%}
                               <p>{{p}}</p>
@@ -88,7 +89,7 @@ title:
                         </li>
                         {%- endfor -%}
                      </ul>
-                     <h1 class="rotated"> Service </h1>
+                     <h2 class="rotated"> Service </h2>
                   </div>
                </div>
             </div>
@@ -119,7 +120,7 @@ title:
                <div class="col-md-6 header_wp_page1">
                   <div class="align-items-center justify-content-start d-flex h-100 container">
                      <div class="rea_head1 text-left">
-                        <h1>{{hp.four_box.title}}</h1>
+                        <h2>{{hp.four_box.title}}</h2>
                         <p>{{hp.four_box.title}}</p>
                      </div>
                   </div>
@@ -140,7 +141,7 @@ title:
                   <div class="col-md-6 h-100">
                      <div class="align-items-center justify-content-start d-flex h-100 container">
                         <div class="rea_head1 text-left">
-                           <h1>{{hp.sup_box.title}}</h1>
+                           <h2>{{hp.sup_box.title}}</h2>
                            <p>{{text}}</p>
                         </div>
                      </div>
