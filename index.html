@@ -171,26 +171,7 @@ image: /images/sprt_gld_cn.png
             </div>
          </div>
 
-         <div class="support_box" id="haftungsausschluss">
-            <div class="container">
-               <div class="row">
-                  <div class="rea_head1 text-left">
-                     <h2>{{hp.haftungsausschluss.title}}</h2>
-                  </div>
-                  {%- for b in hp.haftungsausschluss.blocks -%}
-                  <div class="col-12 support_dtl1">
-                     <div class="detail-box">
-                        <h3 class=" animated wow fadeIn" data-wow-delay="0.5s">{{b.subtitle}}</h3>
-                        <p>{{b.text}}</p>
-                     </div>
-                  </div>
-                  {%- endfor -%}
-               </div>
-            </div>
-         </div>
-
       </div>
-
 
    </div>
    {%- include cookie-consent.html -%}
