@@ -1,10 +1,10 @@
 <style>
-  #cookie-notice {
+#cookie-notice {
     z-index: 99;
     width: 82%;
     max-width: 900px;
     padding: 30px;
-    display: none;
+    /*display: none;*/
     justify-content: space-around;
     flex-direction: column;
     text-align: left;
@@ -13,12 +13,14 @@
     left: 50%;
     bottom: 20px;
     background-color: #333;
-    background-image: linear-gradient(145deg, #73737326 15%, #2b2d2f 80%);
-    /* box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346; */
-     border-radius: 0.5rem; 
+        box-shadow: 0px 2px 25px -12px rgb(193 142 64) !important;
+    -webkit-box-shadow: 0px 2px 25px -12px rgb(193 142 64) !important;
+    border-radius: .5rem;
     margin: 1rem 0;
   }
-
+#cookie-notice span {
+  color: #DDDDDD; 
+}
   @media (min-width: 600px) {
     #cookie-notice {
       flex-direction: row;
@@ -27,7 +29,7 @@
   }
 
   #cookie-notice a.btn {
-    color: #fff;
+       color: #DDDDDD;
     padding: 8px 16px !important;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -35,8 +37,8 @@
     margin: 0 0.3rem 0.5rem;
     padding: 0.5rem 0.25rem;
     text-align: center;
-      box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-   /* border-radius: 1rem; */
+    border: 2px solid #b98036;
+    background: #b98036;
   }
 
   .btn-primary {
@@ -55,7 +57,7 @@
       bottom: 4px;
     }
   }
-  
+
 </style>
 
 <div id="cookie-notice" class="neumorphism-card">
