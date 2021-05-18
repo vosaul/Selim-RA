@@ -6,11 +6,55 @@ image: /images/sprt_gld_cn.png
 author: "Fabian Mörtzschky"
 
 ---
+  <header>
+    <nav class="navigation_bar">
+      <div class="container h-100">
+        <a href="/"><h3 style="margin-bottom: -40px; padding-top: 30px;">Home</h3></a>
+        <input id="responsive-menu" type="checkbox">
+        <label for="responsive-menu"> <span id="" class="menu-icon"></span></label>
+        <div class="overlay"></div>
+        <div class="d-flex align-items-center justify-content-center flex-column h-100 menu_blg">
+          <ul>
+            <li><a href="/#support_box">Start </a></li>
+            <li> <a href="/#unternehmen">Unternehmen </a></li>
+            <li> <a href="/#service">Service </a></li>
+            <li> <a href="/#webinare">Webinare </a></li>
+            <li> <a href="/#produktelosungen">Produktelosungen </a></li>
+            <li> <a href="/impressum">Impressum </a></li>
+          </ul>
+          <ul id="social-media">
+            <li>
+              <a href="https://www.facebook.com/Real-Assets-Support-1462791537189561">
+                <img src="images/facebook.svg">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/real_assets_support/">
+                <img src="images/instagram.svg">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/AssetsSupport">
+                <img src="images/twitter.svg">
+              </a>
+            </li>
+            <li>
+              <a href="/#">
+                <img src="images/youtube.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+  </header>
 {%- assign imp = site.data.impressum -%}
 <div class="support_box" id="haftungsausschluss">
   <div class="container">
+    
     <div class="row">
-      <div class="rea_head1 text-left">
+      <div class="col-12 rea_head1 text-left">
         <h1>{{page.title}}</h1>
         <p>{{page.description}}</p>
         <br>
