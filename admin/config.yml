@@ -13,25 +13,25 @@ public_folder: "/images/"
 publish_mode: editorial_workflow
 collections:
 
-- name: "home"
-  label: "Home"
+- name: "pages"
+  label: "pages"
   files:
     - name: home
       label: Home page data
-      file: _data/home.yml
+      file: "_data/home.yml"
       fields:
       - label: 'support box'
         name: 'support_box'
         widget: 'object'
         required: false
         fields:
-          - label: Title
-            name: title
-            widget: string 
-          - label: subtitle
-            name: subtitle
-            widget: string
-            required: false
+        - label: Title
+          name: title
+          widget: string 
+        - label: subtitle
+          name: subtitle
+          widget: string
+          required: false
 #          - label: text
 #            name: text
 #            widget: list
@@ -41,11 +41,12 @@ collections:
 #              - name: "text"
 #                label: "text"
 #                widget: text
-          - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: tag, label: Tag, widget: string}  }
+        - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', required: false, field: {name: part, widget: string} }
 
-          - label: image
-            name: image
-            widget: string 
+        - label: image
+          name: image
+          widget: string 
+          required: false
            
 #      - label: third_box
 #        name: third_box
@@ -53,11 +54,12 @@ collections:
 #        fields:
 #        - name: txt
 #          widget: text
-      - { label: 'third_box', name: 'third_box', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: part, label: part, widget: text}  }
+      - { label: 'third_box', name: 'third_box', add_to_top: true, minimize_collapsed: true, widget: 'list', reqoired: false,field: {name: part, label: part, widget: text}  }
 
       - label: service_box
         name: service_box
         widget: object
+        required: false
         fields:
 #        - name: text
 #          label: text
@@ -71,65 +73,68 @@ collections:
         - name: services
           label: services
           widget: list
+          required: false
           fields: 
-            - name: service
-              label: service
-              widget: object
-              fields:
-              - name: title
-                label: title
-                widget: string
-              - name: image
-                label: image
-                widget: string
+          - name: service
+            label: service
+            widget: object
+            fields:
+            - name: title
+              label: title
+              widget: string
+            - name: image
+              label: image
+              widget: string
 
       - label: four_box
         name: four_box
         widget: object
         required: false
         fields:
-          - label: Title
-            name: title
-            widget: string 
-          - label: text
-            name: text
-            widget: text
-            required: false
+        - label: Title
+          name: title
+          widget: string 
+        - label: text
+          name: text
+          widget: text
+          required: false
 
       - label: sup_box
         name: sup_box
         widget: object
         required: false
         fields:
-          - label: Title
-            name: title
-            widget: string 
-          - label: text
-            name: text
-            widget: text
-            required: false
-          - label: image
-            name: image
-            widget: string
+        - label: Title
+          name: title
+          widget: string 
+        - label: text
+          name: text
+          widget: text
+          required: false
+        - label: image
+          name: image
+          widget: string
 
       - label: webinar
         name: webinar
         widget: object
+        required: false
         fields:
-          - label: Title
-            name: title
-            widget: string 
-          - label: text
-            name: text
-            widget: text
-            required: false
-          - label: image
-            name: image
-            widget: string
+        - label: Title
+          name: title
+          widget: string 
+        - label: text
+          name: text
+          widget: text
+          required: false
+        - label: image
+          name: image
+          widget: string
 
       - label: crwn_box
         name: crwn_box
         widget: object
+        required: false
         fields:
 #          - label: text
 #            name: text
@@ -138,7 +143,23 @@ collections:
 #          - label: image
 #            name: image
 #            widget: string
-          - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: paragraph, label: paragraph, widget: text}  }
-          - { label: 'image', name: 'image', widget: 'string', required: false }
+        - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: paragraph, label: paragraph, widget: text}  }
+        - { label: 'image', name: 'image', widget: 'string', required: false }
 
-
+    - name: impressum
+      label: Impressum page data
+      file: "_data/impressum.yml"
+      fields:
+      - name: title
+        label: title
+        widget: string
+      - name: blocks
+        title: blocks
+        widget: list
+        fields:
+        - label: subtitle
+          name: subtitle
+          widget: string
+        - name: text
+          label: text
+          widget: text
