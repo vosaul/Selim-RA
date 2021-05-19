@@ -12,22 +12,6 @@ media_folder: "/images/"
 public_folder: "/images/"
 publish_mode: editorial_workflow
 collections:
-- name: "posts"
-  label: "Posts"
-  create: true
-  fields:
-    - { label: 'Layout', name: 'layout', widget: 'string', default: 'post' }
-    - { label: 'slug', name: 'slug', widget: 'string', required: false }
-    - { label: 'image', name: 'image', widget: 'string', required: false}
-    - { label: 'description', name: 'description', widget: 'string', required: false}
-    - { label: 'Title', name: 'title', widget: 'string' }
-    - { label: 'Publish Date', name: 'date', widget: 'datetime', required: false }
-    - { label: "Author", name: "author", widget: "string", required: false}
-    - { label: 'categories', name: 'categories', widget: 'string', required: false}
-    - { label: 'tags', name: 'tags', widget: 'string', required: false}
-    - { label: 'Body', name: 'body', widget: 'markdown' }
-  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-  folder: "/_posts"
 
 - name: "home"
   label: "Home"
@@ -48,39 +32,48 @@ collections:
             name: subtitle
             widget: string
             required: false
-          - label: text
-            name: text
-            widget: text
-#            fields:
-#              - name: "txt"
+#          - label: text
+#            name: text
+#            widget: list
+#            add_to_top: true
+#            minimize_collapsed: true
+#            field:
+#              - name: "text"
+#                label: "text"
 #                widget: text
+          - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: tag, label: Tag, widget: string}  }
+
           - label: image
             name: image
             widget: string 
            
-      - label: third_box
-        name: third_box
-        widget: list
-        fields:
-        - name: txt
-          widget: text
+#      - label: third_box
+#        name: third_box
+#        widget: list
+#        fields:
+#        - name: txt
+#          widget: text
+      - { label: 'third_box', name: 'third_box', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: part, label: part, widget: text}  }
 
       - label: service_box
         name: service_box
         widget: object
         fields:
-        - name: text
-          label: text
-          widget: list
-          fields:
-          - name: txt
-            label: txt
-            widget: text
+#        - name: text
+#          label: text
+#          widget: list
+#          fields:
+#          - name: txt
+#            label: txt
+#            widget: text
+        - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: tag, label: Tag, widget: string}  }
+
         - name: services
           label: services
           widget: list
           fields: 
             - name: service
+              label: service
               widget: object
               fields:
               - name: title
@@ -90,9 +83,23 @@ collections:
                 label: image
                 widget: string
 
+      - label: four_box
+        name: four_box
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string 
+          - label: text
+            name: text
+            widget: text
+            required: false
+
       - label: sup_box
         name: sup_box
         widget: object
+        required: false
         fields:
           - label: Title
             name: title
@@ -124,11 +131,14 @@ collections:
         name: crwn_box
         widget: object
         fields:
-          - label: text
-            name: text
-            widget: text
-            required: false
-          - label: image
-            name: image
-            widget: string
+#          - label: text
+#            name: text
+#            widget: text
+#            required: false
+#          - label: image
+#            name: image
+#            widget: string
+          - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: paragraph, label: paragraph, widget: text}  }
+          - { label: 'image', name: 'image', widget: 'string', required: false }
+
 

@@ -7,9 +7,8 @@ support_box:
   image: /images/supprt_rgt1.png
 
 third_box:
-  text:  
-    - Seit 7 Jahren vergleichen und prüfen wir Anbieter, Gesellschaften und Vertriebe auf Herz und Nieren. Mit dieser geballten Edelmetall Expertise wissen wir ganz genau wo wir hinschauen müssen.
-    - Wir prüfen von den Kostenstrukturen und vertrieblichen Vernetzung bis hin zur Sicherheit und Kundenfreundlichkeit. Und decken damit jede noch so versteckte Kostenfalle, jede Undurchsichtigkeit in Kundenverträgen und jede Sicherheitslücke auf.
+  - Seit 7 Jahren vergleichen und prüfen wir Anbieter, Gesellschaften und Vertriebe auf Herz und Nieren. Mit dieser geballten Edelmetall Expertise wissen wir ganz genau wo wir hinschauen müssen.
+  - Wir prüfen von den Kostenstrukturen und vertrieblichen Vernetzung bis hin zur Sicherheit und Kundenfreundlichkeit. Und decken damit jede noch so versteckte Kostenfalle, jede Undurchsichtigkeit in Kundenverträgen und jede Sicherheitslücke auf.
 
 service_box:
   text: 
@@ -31,6 +30,7 @@ service_box:
       image: /images/web-search-engine.svg
     - title: Kundenberatung
       image: /images/advise.svg
+      
 four_box: 
   title: Produktgeber und Varianten 
   text: Wir checken 24 Stunden täglich jeden Anbieter. Für ein offenes, ehrliches undtransparentes Goldprodukt in Ihrem Kundenportfolio. Real Assets Support ist KEINEdelmetallanbieter!!! Sondern eine unabhänige Gesellschaft die Unternehmen und Anbieterspeziell 
