@@ -2,11 +2,11 @@
 
 backend:
   name: git-gateway
-  accept_roles: #optional - accepts all users if left out
+  accept_roles: 
     - admin
     - editor
 #  name: github
-  repo: vosaul/Selim-RA
+  repo: selimerunkut/real_asset_support_website
   branch: main
  # Path to your GitHub repository
 media_folder: "/images/"
