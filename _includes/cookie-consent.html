@@ -13,9 +13,7 @@
     left: 50%;
     bottom: 0px;
     background-color: #333;
-    background-image: linear-gradient(
-145deg
-, #73737326 15%, #2b2d2f 80%);
+    background-image: linear-gradient(145deg, #73737326 15%, #2b2d2f 80%);
     /* box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346; */
     /* border-radius: 2rem; */
     align-items: center;
@@ -33,19 +31,28 @@
       gap: 4px;
     }
   }
-
-  #cookie-notice a.btn {
-    color: #fff;
-    padding: 8px 16px !important;
-    border-radius: 0.5rem;
+#setting {
+    color: #DDDDDD;
     cursor: pointer;
     display: unset;
     margin: 0 0.3rem 0rem;
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem 0.7rem;
     text-align: center;
-      box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-    border-radius: 1rem;
-  }
+    border: 1px solid #b98036;
+    border-radius: 0;
+    font-size: 12px;
+    background: #b98036;
+}#cookie-notice #cookie-notice-accept {
+    color: #DDDDDD;
+    cursor: pointer;
+    display: unset;
+    margin: 0 0.3rem 0rem;
+    padding: 0.5rem 0.7rem;
+    text-align: center;
+    border: 1px solid #b98036;
+    border-radius: 0;
+    font-size: 12px;
+}
 
   .btn-primary {
     background: darkgreen;
@@ -63,13 +70,15 @@
       bottom: 4px;
     }
   }
-  
+  .Dateh {
+    color: #dddddd;
+    text-decoration: underline;}
 </style>
 
 <div id="cookie-notice" class="neumorphism-card">
   <span style="color: #fff">
     Wir verwenden Cookies auf unserer Website, um zu verstehen, wie du diese nutzt.Indem du auf ,,Zustimmen"" kiickst, stimmst du deren Verwendung zu.
- <a href="/impressum">Datenschutzerklärung</a>
+ <a href="/impressum" class="Dateh>Datenschutzerklärung</a>
   </span>
   <span>
     <a id="setting" class="btn">Einstellungen</a>
