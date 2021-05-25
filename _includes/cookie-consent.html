@@ -144,6 +144,10 @@
     createCookie(name, "", -1);
   }
 
+  function deleteCookieWithPath(name, path = '.real-assets-support.de') {
+    document.cookie = name + '=; Path=/; Domain='+path+'; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
+
   if (readCookie('cookie-notice-dismissed') == 'true') {
     {% if site.google_tag_id %}
     window.dataLayer = window.dataLayer || [];
@@ -162,6 +166,9 @@
   });
   document.getElementById('cookie-notice-decline').addEventListener("click", function () {
     document.getElementById('cookie-notice').style.display = 'none';
+    deleteCookieWithPath("_gat_gtag_UA_138205903_1");
+    deleteCookieWithPath("_ga");
+    deleteCookieWithPath("_gid");
   });
 
 </script>
