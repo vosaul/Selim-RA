@@ -1,6 +1,7 @@
 <style>
-  #cookie-notice {    font-size: 12px;
-       z-index: 99;
+  #cookie-notice {
+    font-size: 12px;
+    z-index: 99;
     width: 100%;
     /* max-width: 900px; */
     padding: 10px 0px 10px;
@@ -18,10 +19,9 @@
     /* border-radius: 2rem; */
     align-items: center;
     margin: 0rem 0;
-}
   }
-  
-  #cookie-notice a { 
+
+  #cookie-notice a {
     color: #C18E40;
   }
 
@@ -31,14 +31,16 @@
       gap: 4px;
     }
   }
-a#setting:hover {
+
+  a#setting:hover {
     border: 1px solid #b98036;
     border-radius: 0;
     font-size: 12px;
     background: #13120d;
     color: #b98036;
-}
-#setting {
+  }
+
+  #setting {
     color: #DDDDDD;
     cursor: pointer;
     display: unset;
@@ -52,12 +54,16 @@ a#setting:hover {
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-}#cookie-notice #cookie-notice-accept:hover {
+  }
+
+  #cookie-notice #cookie-notice-accept:hover, #cookie-notice-decline:hover {
     color: #DDDDDD;
     background: #13120d;
     border: 1px solid #13120d;
-}
-#cookie-notice #cookie-notice-accept {font-size: 11px;
+  }
+
+  #cookie-notice #cookie-notice-accept, #cookie-notice-decline {
+    font-size: 11px;
     color: #DDDDDD;
     cursor: pointer;
     display: unset;
@@ -70,7 +76,7 @@ a#setting:hover {
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-}
+  }
 
   .btn-primary {
     background: darkgreen;
@@ -88,23 +94,29 @@ a#setting:hover {
       bottom: 4px;
     }
   }
+
   .Dateh {
     color: #dddddd;
-    text-decoration: underline !important;}
+    text-decoration: underline !important;
+  }
+
   a#close {
     color: #b98036;
-}.Dateh:hover {
-    color: #b98036!important;
-}
+  }
+
+  .Dateh:hover {
+    color: #b98036 !important;
+  }
 </style>
 
 <div id="cookie-notice" class="neumorphism-card">
   <span style="color: #fff">
-    Wir verwenden Cookies auf unserer Website, um zu verstehen, wie du diese nutzt. Indem du auf "Zustimmen" klickst, stimmst du deren Verwendung zu.
- <a href="/impressum" class="Dateh">Datenschutzerklärung</a>
+    Wir verwenden Cookies auf unserer Website, um zu verstehen, wie du diese nutzt. Indem du auf "Zustimmen" klickst,
+    stimmst du deren Verwendung zu.
+    <a href="/impressum" class="Dateh">Datenschutzerklärung</a>
   </span>
   <span>
-  <a id="cookie-notice-accept" class="btn">Zustimmen</a>  <a id="close" class="btn">Ablehnen</i></a>
+    <a id="cookie-notice-accept" class="btn">Zustimmen</a> <a id="cookie-notice-decline" class="btn">Ablehnen</i></a>
   </span>
 </div>
 
@@ -134,7 +146,7 @@ a#setting:hover {
 
   if (readCookie('cookie-notice-dismissed') == 'true') {
     {% if site.google_tag_id %}
-      window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
