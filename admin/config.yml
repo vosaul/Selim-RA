@@ -48,13 +48,12 @@ collections:
           widget: list
           required: false
           fields: 
-          - name: service
-            widget: object
-            fields:
-            - name: title
-              widget: string
-            - name: image
-              widget: string
+          - name: title
+            widget: string
+            minimize_collapsed: true
+          - name: image
+            widget: string
+            minimize_collapsed: true
 
       - name: four_box
         widget: object
