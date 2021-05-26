@@ -24,8 +24,7 @@ third_box:
 service_box:
   text:
     - Wir sind für Sie da.
-    - Egal ob Sie in Ihrer Maklertätigkeit erfahrener Edelmetallprofi oder
-      Neueinsteiger,
+    - Egal ob Sie Makler, erfahrener Edelmetallprofi oder Neueinsteiger sind,
     - wir unterstützen Sie genauso wie Sie es brauchen.
   services:
     - title: Webinare
