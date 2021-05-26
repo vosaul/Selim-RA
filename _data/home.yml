@@ -24,8 +24,7 @@ third_box:
 service_box:
   text:
     - Wir sind für Sie da.
-    - Egal ob Sie in Ihrer Maklertätigkeit erfahrener Edelmetallprofi oder
-      Neueinsteiger,
+    - Egal ob Sie Makler, erfahrener Edelmetallprofi oder Neueinsteiger sind,
     - wir unterstützen Sie genauso wie Sie es brauchen.
   services:
     - title: Webinare
@@ -44,10 +43,10 @@ service_box:
       image: /images/advise.svg
 four_box:
   title: Produktgeber und Varianten
-  text: Wir checken 24 Stunden täglich jeden Anbieter.  Für ein offenes, ehrliches
-    undtransparentes Goldprodukt in Ihrem Kundenportfolio. Real Assets Support
-    ist KEINEdelmetallanbieter!!! Sondern eine unabhänige Gesellschaft die
-    Unternehmen und Anbieterspeziell
+  text: Wir überprüfen 24 Stunden täglich jeden Anbieter. Für ein offenes,
+    ehrliches und transparentes Goldprodukt in Ihrem Kundenportfolio. Real
+    Assets Support ist KEIN Edelmetallanbieter!!! Sondern eine unabhängige
+    Gesellschaft die Unternehmen und Anbieter speziell betreut.
 sup_box:
   title: Produktgeber und Varianten
   text: Wir checken 24 Stunden täglich jeden Anbieter. Für ein offenes, ehrliches
