@@ -167,7 +167,7 @@ h2 {
 /*-----------------------------------------------detl_img------------------------------------*/
 .detl_img {overflow: hidden; position: relative; width: 100%; background: url(../images/details1.png); background-size: cover;background-attachment: fixed; background-repeat: no-repeat; height: 723px; background-position: center; } .overlay_box {position: relative; background: rgb(22 22 22 / 70%); }
 .lst_box {position: absolute; bottom: 0; height: 320px; background: #B98036; width: 100%;display: flex; align-items: center; }
-.lst_box p {font-size: 16px; color: #DDDDDD; line-height: 22px;} .lst_box a{ cursor: pointer;   font-size: 16px; } .tringleBox {width: 70%; margin: 0 auto; text-align: center; }
+.lst_box p {font-size: 16px; color: #DDDDDD; line-height: 22px;} .lst_box a{ cursor: pointer;   font-size: 16px; } .tringleBox {    z-index: 9999999;width: 70%; margin: 0 auto; text-align: center; }
 .frst-box {padding: 80px 100px 0; height: 50%; position: relative; } .frst-box h3 {font-size: 25px; text-align: center; color: #DDDDDD; } 
 .lst_box:before {content: ''; position: absolute; left: 12px; top: -83px; width: 400px; height: 145px; background: #b98036; -moz-transform: rotate(-23deg); -webkit-transform: rotate(-23deg ); transform: rotate(-23deg ); }
 .lst_box:after {content: ''; position: absolute; right: 13px; top: -85px; width: 393px; height: 146px; background: #b98036; -moz-transform: rotate(23deg ); -webkit-transform: rotate(23deg ); transform: rotate(23deg ); }
