@@ -1,36 +1,41 @@
 <!-- footer -->
+{% assign f = site.data.footer %}
 <section class="footer pt-3 ">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-sm-6">
-        <h6 class="ftr_title">LASSEN SIE UNS VERBINDEN </h6>
-        <ul>
-          <li><a href="#"><img src="images/location.svg">Real Assets Support Heinkelstraße 4 71384 Weinstadt </a></li>
-          <li><a href="tel:>071512565035"><img src="images/phone.svg">07151/2565035 </a></li>
-          <li><a href="mailto:info@real-assets-support.de"><img src="images/mail.svg">info@real-assets-support.de</a>
+      {% for c in f.columns %}
+      <div class="{% if forloop.index == 1 %}col-lg-5 col-sm-6{% elsif forloop.index == 2 %}col-lg-3 col-sm-6 {% else %}col-md-4 col-sm-12{% endif %}">
+        <h6 class="ftr_title">{{c.title}}</h6>
+        <ul {% if c.class %}class="{{c.class}}"{% endif %}>
+          {% for i in c.items %}
+          <li>
+            {% if i.link %}
+            <a href="{{i.link}}">
+              {% if i.image %}
+              <img src="{{i.image}}">
+              {% endif %}
+              {% if i.text %}
+              {{i.text}}
+              {% endif %}
+            </a>
+            {% else %}
+            {% if i.image %}
+            <img src="{{i.image}}">
+            {% endif %}
+            {% if i.text %}
+            {{i.text}}
+            {% endif %}
+            {% endif %}
+            </a>
           </li>
-        </ul>
+          {% endfor %}
       </div>
-      <div class="col-lg-4 col-sm-6">
-        <h6 class="ftr_title">SCHNELLE LINKS</h6>
-        <ul>
-          <li><a href="/impressum">Impressum </a></li>
-        </ul>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <label class="ftr_title">SOZIALEN MEDIEN</label>
-        <ul class="social_links d-flex">
-          <li><a href="https://www.instagram.com/real_assets_support/"> <img src="images/instagram.svg"></a></li>
-          <li><a href="https://www.facebook.com/Real-Assets-Support-1462791537189561"> <img
-                src="images/logo-facebook.svg"></a></li>
-          <li><a href="https://twitter.com/AssetsSupport"> <img src="images/twitter.svg"></a></li>
-        </ul>
-      </div>
+      {% endfor %}
     </div>
   </div>
   <div class="container-fluid footer_btm">
     <div class="col-md-12 text-center copyright">
-      <p>© Copyright 2021 - REAL-ASSETS-SUPPORT.DE - All rights reserved</p>
+      <p>{{f.copy}}</p>
     </div>
   </div>
 </section>
@@ -38,6 +43,6 @@
 <!-- Javascript files-->
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 <script src="js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>

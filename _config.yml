@@ -1,4 +1,5 @@
 
+google_id: UA-138205903-1
 title: Real Assets Support
 language: de
 author: Fabian Mörtzschky
@@ -8,7 +9,7 @@ address:
   - Heinkelstraße 4 
   - 71384 Weinstadt 
 description: >- # this means to ignore newlines until "baseurl:"
-  Experienced Software Developer with a solid background in software development, business intelligence, cryptocurrencies, engineering and research, and passionate about the dynamics of technological innovation.
+  Deutschlands größter Makler Betreuer im Edelmetallbereich
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
