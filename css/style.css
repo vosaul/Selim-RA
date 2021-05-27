@@ -115,11 +115,11 @@ nav ul#social-media > li {display: inline-block; font-size: 1.5em; margin: 0.5em
 */
 
 .common_strip_box{position: relative;}
- .common_strip_box:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip5.png); 
+ .common_strip_box:before {content: ""; position: absolute; width: 40%; height: 100%; background: url(../images/strip5.png); 
  background-position: center; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; opacity: .7; z-index: 99;} 
 
-.common_strip_box:after {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/srrip_2_new.png); 
- background-position: center; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; opacity: .7;  z-index: 99;} 
+.common_strip_box:after {content: ""; position: absolute; width: 40%; height: 100%; background: url(../images/srrip_2_new.png); 
+ background-position: center; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; opacity: .7;  z-index: 99;right:0} 
  
 
 /*---------------------------------------third------------------------------*/
@@ -137,8 +137,10 @@ nav ul#social-media > li {display: inline-block; font-size: 1.5em; margin: 0.5em
 /*.service_box:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip3.png); background-position: left; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed; left: 0; }*/
 .serv_head p {text-align: center; margin: 0; color: #DDDDDD; font-size: 18px; } .service_box ul p{    font-size: 13px; color: #8F8D8D;} .service_box ul li {min-width: 170px; text-align: center; }
 .service_box ul li:not(:last-child){border-right: 1px solid #707070;} 
-.service_box ul li {min-width: 160px; text-align: center; min-height: 170px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }.service_box ul li img {padding-bottom: 30px; margin-top: 30px; }
-.service_box ul {padding: 60px 0 0; } .rotated {writing-mode: tb-rl; -ms-writing-mode: tb-rl; opacity: 1; color: #8F8D8D; font-size: 55px; text-align: center; transform: rotate(-180deg ); position: absolute; left: -7%; /* top: 43%; */ bottom: 0; }
+ .service_box ul li {  /*  min-width: 160px; */ min-width: 14% text-align: center; min-height: 170px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }.service_box ul li img {padding-bottom: 30px; margin-top: 30px; }
+.service_box ul {padding: 60px 0 0; } .rotated {writing-mode: tb-rl; -ms-writing-mode: tb-rl; opacity: 1; color: #8F8D8D; font-size: 55px; text-align: center;
+ transform: rotate(-180deg ); position: absolute; left: -7%; /* top: 43%; */ bottom: 35px;
+    margin: 0;}
 
 
 
@@ -162,18 +164,28 @@ h2 {
     font-size: 32px;
     color: #B98036;
 }
-
+div#produktelosungen {
+    background: #202020;
+}
 
 /*-----------------------------------------------detl_img------------------------------------*/
 .detl_img {overflow: hidden; position: relative; width: 100%; background: url(../images/details1.png); background-size: cover;background-attachment: fixed; background-repeat: no-repeat; height: 723px; background-position: center; } .overlay_box {position: relative; background: rgb(22 22 22 / 70%); }
 .lst_box {position: absolute; bottom: 0; height: 320px; background: #B98036; width: 100%;display: flex; align-items: center; }
-.lst_box p {font-size: 16px; color: #DDDDDD; line-height: 22px;} .lst_box a{ cursor: pointer;   font-size: 16px; } .tringleBox {width: 70%; margin: 0 auto; text-align: center; }
+.lst_box p {font-size: 16px; color: #DDDDDD; line-height: 22px;} .lst_box a{ cursor: pointer;   font-size: 16px; } .tringleBox {    z-index: 9999999;width: 70%; margin: 0 auto; text-align: center; }
 .frst-box {padding: 80px 100px 0; height: 50%; position: relative; } .frst-box h3 {font-size: 25px; text-align: center; color: #DDDDDD; } 
 .lst_box:before {content: ''; position: absolute; left: 12px; top: -83px; width: 400px; height: 145px; background: #b98036; -moz-transform: rotate(-23deg); -webkit-transform: rotate(-23deg ); transform: rotate(-23deg ); }
 .lst_box:after {content: ''; position: absolute; right: 13px; top: -85px; width: 393px; height: 146px; background: #b98036; -moz-transform: rotate(23deg ); -webkit-transform: rotate(23deg ); transform: rotate(23deg ); }
 /*.detl_img:before {content: ""; position: absolute; width: 100%; height: 100%; background: url(../images/strip1.png); background-position: center; background-repeat: no-repeat; background-size: cover; top: 0; background-attachment: fixed;  }*/
 
 /*----------------------------------------------Media Css-----------------------------------*/
+@media only screen and (min-width:2000px) {
+#webinare .col-lg-8 {
+    width: 760px;
+    max-width: 760px;
+}
+}
+
+
 @media only screen and (min-width:1600px) {
 .homepage-logo-block img {height: auto; } #scroll-btm img {height: 30px; }
 .detail-box p ,.lst_box p,.lst_box a{font-size: 18px;}.detail-box h4 {font-size: 55px;}
