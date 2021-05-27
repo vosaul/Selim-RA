@@ -1,32 +1,29 @@
 copy: © Copyright 2021 - REAL-ASSETS-SUPPORT.DE - All rights reserved
 columns:
-  - column:
-    title: LASSEN SIE UNS VERBINDEN 
-    items:
-    - text: Real Assets Support Heinkelstraße 4 71384 Weinstadt
-      image: images/location.svg
-    - text: 07151/2565035
-      image: images/phone.svg
-    - text: info@real-assets-support.de
-      image: images/mail.svg
-      link: info@real-assets-support.de
-  - column:
-    title: SITEMAP
-    items:
-    - text: Home
-      link: /
-    - text: Impressum
-      link: /impressum
-  - column:
-    title: FOLGE UNS AUF
-    class: social_links d-flex"
-    items:
-    - text: 
-      image: images/instagram.svg
-      link: https://www.instagram.com/real_assets_support/
-    - text: 
-      image: images/facebook.svg
-      link: https://www.facebook.com/Real-Assets-Support-1462791537189561
-    - text: 
-      image: images/twitter.svg
-      link: https://twitter.com/AssetsSupport
+- title: LASSEN SIE UNS VERBINDEN 
+  items:
+  - text: Real Assets Support Heinkelstraße 4 71384 Weinstadt
+    image: images/location.svg
+  - text: 07151/2565035
+    image: images/phone.svg
+  - text: info@real-assets-support.de
+    image: images/mail.svg
+    link: info@real-assets-support.de
+- title: SITEMAP
+  items:
+  - text: Home
+    link: /
+  - text: Impressum
+    link: /impressum
+- title: FOLGE UNS AUF
+  class: social_links d-flex"
+  items:
+  - text: 
+    image: images/instagram.svg
+    link: https://www.instagram.com/real_assets_support/
+  - text: 
+    image: images/facebook.svg
+    link: https://www.facebook.com/Real-Assets-Support-1462791537189561
+  - text: 
+    image: images/twitter.svg
+    link: https://twitter.com/AssetsSupport
