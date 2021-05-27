@@ -2,143 +2,131 @@
 
 backend:
 #  name: git-gateway
-#  accept_roles: #optional - accepts all users if left out
+#  accept_roles: 
 #    - admin
 #    - editor
   name: github
   repo: vosaul/Selim-RA
+#  repo: selimerunkut/real_asset_support_website
+#  branch: main
  # Path to your GitHub repository
 media_folder: "/images/"
 public_folder: "/images/"
 publish_mode: editorial_workflow
 collections:
 
-- name: "home"
-  label: "Home"
+- name: "pages"
+  label: "pages"
   files:
     - name: home
       label: Home page data
-      file: _data/home.yml
+      file: "_data/home.yml"
       fields:
-      - label: 'support box'
-        name: 'support_box'
+      - name: 'support_box'
         widget: 'object'
         required: false
         fields:
-          - label: Title
-            name: title
-            widget: string 
-          - label: subtitle
-            name: subtitle
-            widget: string
-            required: false
-#          - label: text
-#            name: text
-#            widget: list
-#            add_to_top: true
-#            minimize_collapsed: true
-#            field:
-#              - name: "text"
-#                label: "text"
-#                widget: text
-          - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: tag, label: Tag, widget: string}  }
+        - name: title
+          widget: string 
+        - name: subtitle
+          widget: text
+          required: false
+        - { name: 'text', add_to_top: true, widget: 'list', required: false, field: {name: part, widget: text} }
 
-          - label: image
-            name: image
-            widget: string 
-           
-#      - label: third_box
-#        name: third_box
-#        widget: list
-#        fields:
-#        - name: txt
-#          widget: text
-      - { label: 'third_box', name: 'third_box', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: part, label: part, widget: text}  }
+        - name: image
+          widget: string 
+          required: false
 
-      - label: service_box
-        name: service_box
+      - { name: 'third_box', add_to_top: true, minimize_collapsed: true, widget: 'list', required: false, field: {name: part,  widget: text} }
+
+      - name: service_box
         widget: object
+        required: false
         fields:
-#        - name: text
-#          label: text
-#          widget: list
-#          fields:
-#          - name: txt
-#            label: txt
-#            widget: text
-        - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: tag, label: Tag, widget: string}  }
+        - { name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: part, widget: text} }
 
         - name: services
-          label: services
           widget: list
+          required: false
           fields: 
-            - name: service
-              label: service
-              widget: object
-              fields:
-              - name: title
-                label: title
-                widget: string
-              - name: image
-                label: image
-                widget: string
+          - name: title
+            widget: string
+            minimize_collapsed: true
+          - name: image
+            widget: string
+            minimize_collapsed: true
 
-      - label: four_box
-        name: four_box
+      - name: four_box
         widget: object
         required: false
         fields:
-          - label: Title
-            name: title
-            widget: string 
-          - label: text
-            name: text
-            widget: text
-            required: false
+        - name: title
+          widget: string 
+        - name: text
+          widget: text
+          required: false
 
-      - label: sup_box
-        name: sup_box
+      - name: sup_box
         widget: object
         required: false
         fields:
-          - label: Title
-            name: title
-            widget: string 
-          - label: text
-            name: text
-            widget: text
-            required: false
-          - label: image
-            name: image
-            widget: string
+        - name: title
+          widget: string 
+        - name: text
+          widget: text
+          required: false
+        - name: image
+          widget: string
 
-      - label: webinar
-        name: webinar
+      - name: webinar
         widget: object
+        required: false
         fields:
-          - label: Title
-            name: title
-            widget: string 
-          - label: text
-            name: text
-            widget: text
-            required: false
-          - label: image
-            name: image
-            widget: string
+        - name: title
+          widget: string 
+        - name: image
+          widget: string
+        - { name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: part, widget: text} }
 
       - label: crwn_box
         name: crwn_box
         widget: object
+        required: false
         fields:
-#          - label: text
-#            name: text
-#            widget: text
-#            required: false
-#          - label: image
-#            name: image
-#            widget: string
-          - { label: 'text', name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: paragraph, label: paragraph, widget: text}  }
-          - { label: 'image', name: 'image', widget: 'string', required: false }
+        - { name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: part,  widget: text} }
+        - { label: 'image', name: 'image', widget: 'string', required: false }
 
+    - name: "impressum"
+      label: "Impressum page data"
+      file: "_data/impressum.yml"
+      fields:
+      - name: "title"
+        widget: "string"
+      - name: "blocks"
+        widget: "list"
+        allow_add: true
+        fields:
+        - name: "subtitle"
+          widget: "string"
+        - name: "text"
+          widget: "text"
+    - name: footer
+      label: Footer data
+      file: "_data/footer.yml"
+      fields: 
+      - name: copy
+        widget: string
+        required: false
+      - name: columns
+        widget: list
+        fields:
+        - name: title
+          widget: string
+          required: false
+        - name: text
+          widget: string
+          required: false
+        - name: link
+          widget: string
+          required: false
 
