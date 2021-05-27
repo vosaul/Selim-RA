@@ -12,15 +12,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Deutschlands größter Makler Betreuer im Edelmetallbereich
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-collections:
-  contacts:
-    output: false
-defaults:
-  - scope:
-      path: ""
-      type: "contacts"
-    values:
-      layout: "none"
 
 social: 
   - icon: /images/instagram.svg

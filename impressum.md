@@ -1,6 +1,6 @@
 ---
+title: "Impressum"
 layout: page
-title: Impressum
 description: "Angaben gemäß § 5 TMG"
 image: /images/sprt_gld_cn.png
 author: "Fabian Mörtzschky"
