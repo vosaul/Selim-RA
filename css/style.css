@@ -162,7 +162,9 @@ h2 {
     font-size: 32px;
     color: #B98036;
 }
-
+div#produktelosungen {
+    background: #202020;
+}
 
 /*-----------------------------------------------detl_img------------------------------------*/
 .detl_img {overflow: hidden; position: relative; width: 100%; background: url(../images/details1.png); background-size: cover;background-attachment: fixed; background-repeat: no-repeat; height: 723px; background-position: center; } .overlay_box {position: relative; background: rgb(22 22 22 / 70%); }
