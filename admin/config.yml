@@ -1,12 +1,13 @@
 # config.yml
 
 backend:
-  name: git-gateway
-  accept_roles: 
-    - admin
-    - editor
-#  name: github
-  repo: selimerunkut/real_asset_support_website
+#  name: git-gateway
+#  accept_roles: 
+#    - admin
+#    - editor
+  name: github
+#  repo: selimerunkut/real_asset_support_website
+  repo: vosaul/Selim-RA
   branch: main
  # Path to your GitHub repository
 media_folder: "/images/"
@@ -101,6 +102,8 @@ collections:
       fields:
       - name: "title"
         widget: "string"
+      - name: "contacts"
+        widget: "text"
       - name: "blocks"
         widget: "list"
         allow_add: true
@@ -109,3 +112,10 @@ collections:
           widget: "string"
         - name: "text"
           widget: "text"
+
+- name: "contacts"
+  label: impressum top section
+  folder: "_contacts"
+  fields:
+  - name: "body"
+    widget: "markdown"

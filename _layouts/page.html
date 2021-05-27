@@ -1,10 +1,5 @@
 ---
 layout: default
-title: Impressum
-description: "Angaben gemäß § 5 TMG"
-image: /images/sprt_gld_cn.png
-author: "Fabian Mörtzschky"
-
 ---
   <header>
     <nav class="navigation_bar">
@@ -50,25 +45,17 @@ author: "Fabian Mörtzschky"
     </nav>
     <main>
   </header>
-{%- assign imp = site.data.impressum -%}
 <div class="support_box" id="haftungsausschluss">
   <div class="container">
     
     <div class="row">
       <div class="col-12 rea_head1 text-left">
-
-        {{site.contacts}}
+        <h1>{{page.title}}</h1>
+        
+        {{content}}
 
       </div>
-      {%- for b in imp.blocks -%}
-      <div class="col-12 support_dtl1">
-        <div class="detail-box">
-          <h2 class=" animated wow fadeIn" data-wow-delay="0.5s">{{b.subtitle}}</h2>
-          <p>{{b.text}}</p>
-        </div>
-      </div>
-      {%- endfor -%}
-    </div>
+     </div>
   </div>
 </div>
 
