@@ -95,23 +95,6 @@ collections:
         - { name: 'text', add_to_top: true, minimize_collapsed: true, widget: 'list', field: {name: part,  widget: text} }
         - { label: 'image', name: 'image', widget: 'string', required: false }
 
-    - name: "impressum"
-      label: "Impressum page data"
-      file: "_data/impressum.yml"
-      fields:
-      - name: "title"
-        widget: "string"
-      - name: "contacts"
-        widget: "text"
-      - name: "blocks"
-        widget: "list"
-        allow_add: true
-        fields:
-        - name: "subtitle"
-          widget: "string"
-        - name: "text"
-          widget: "text"
-
 - name: "pages"
   label: pages
   folder: "/"
