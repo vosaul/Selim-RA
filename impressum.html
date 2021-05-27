@@ -56,18 +56,9 @@ author: "Fabian Mörtzschky"
     
     <div class="row">
       <div class="col-12 rea_head1 text-left">
-        <h1>{{page.title}}</h1>
-        <p>{{page.description}}</p>
-        <br>
-        <p>{{site.author}}</p>
-        {%- for a in site.address -%}
-          <p>{{a}}</p>
-        {%- endfor -%}
-        <h3>Vertreten durch:</h3>
-        <p>{{site.author}}</p>
-        <h3>Kontakt:</h3>
-        <p>{{site.phone}}</p>
-        <p><a href="{{site.email}}"}}></a>{{site.email}}</a></p>
+
+        {{site.contacts}}
+
       </div>
       {%- for b in imp.blocks -%}
       <div class="col-12 support_dtl1">
